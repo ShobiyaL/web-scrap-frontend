@@ -1,8 +1,6 @@
 import React from "react";
 
-
-
-
+import ''
 export default function Listings() {
     let products = [
         {
