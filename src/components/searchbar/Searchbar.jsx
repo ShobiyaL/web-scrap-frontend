@@ -1,4 +1,4 @@
-import React ,{useState,useEffect} from 'react';
+import React  from 'react';
 import './searchbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
