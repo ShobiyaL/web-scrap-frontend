@@ -13,17 +13,14 @@ useEffect(()=>{
 },[]);
 let loadData = async ()=>{
   let products= await axios.get(`https://web-scraping-node.herokuapp.com/getProduct?product=shirts`);
-  // console.log(products);
+  console.log(products);
 }
-let fetchData = async (product) =>{
-  let prod= await axios.get(`https://web-scraping-node.herokuapp.com/getProduct?product=${product}`);
-  // console.log(products);
-}
+
   return (
     <div >
     <BrowserRouter>
       <Routes>
-        <Route path='/'  element={<Searchbar data={fetchData}/>}/>
+        <Route path='/'  element={<Searchbar />}/>
         <Route path='/results' element={<Listings />}/>
       </Routes>
     </BrowserRouter>
